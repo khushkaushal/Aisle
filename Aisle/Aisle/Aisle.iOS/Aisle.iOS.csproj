@@ -157,4 +157,10 @@
       <Name>Aisle</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\baseline_error_outline_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\baseline_home_black_24dp.png" />
+  </ItemGroup>
 </Project>

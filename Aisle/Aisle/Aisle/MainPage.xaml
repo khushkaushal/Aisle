@@ -1,14 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Aisle"
+            xmlns:views="clr-namespace:Aisle.Views"
              x:Class="Aisle.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <views:HomePage Title="Home" Icon="baseline_home_black_24dp.png"/>
+    <views:About Title="About" Icon="baseline_error_outline_black_24dp.png"/>
 
-</ContentPage>
+
+
+</TabbedPage>

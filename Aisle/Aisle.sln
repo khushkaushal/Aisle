@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aisle.iOS", "Aisle\Aisle.iO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aisle.UWP", "Aisle\Aisle.UWP\Aisle.UWP.csproj", "{618E56BE-AD7B-4E6E-8D7E-F5AE6F4288B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aisle", "Aisle\Aisle\Aisle.csproj", "{7B10BEB6-DAEA-4A52-9506-9E80FE5A5633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aisle", "Aisle\Aisle\Aisle.csproj", "{7B10BEB6-DAEA-4A52-9506-9E80FE5A5633}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
