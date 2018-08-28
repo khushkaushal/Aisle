@@ -9,30 +9,28 @@ using Xamarin.Forms.Xaml;
 
 namespace Aisle.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class HomePage : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class HomePage : ContentPage
+    {
 
-        private readonly List<string> _names = new List<string>
+        public HomePage()
         {
-            "hulu","lulu","bholu","Jhulu","chullu","mulu"
-        };
+            InitializeComponent();
 
-		public HomePage ()
-		{
-			InitializeComponent ();
+            Item newItems = new Item();
 
-            Item.ItemsSource = _names;
-		}
+            BindingContext = newItems.makeList();
 
-        private void ItemSearchBar_SearchButtonPressed(object sender, EventArgs e)
+
+        }
+
+        void SearchBar_SearchButtonPressed(object sender, EventArgs e)
         {
-            string keyword = ItemSearchBar.Text;
+            String keyword = sBar.Text;
 
-           IEnumerable<string> searchResult = _names.Where(name => name.Contains(keyword));
-
-            Item.ItemsSource = searchResult;
-
+            Item item = new Item();
+            BindingContext = item.searchItem(keyword);
+            
         }
     }
 }
